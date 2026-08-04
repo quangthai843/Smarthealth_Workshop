@@ -1,0 +1,51 @@
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# Enable Git info for automatic last modified dates
+enableGitInfo = true
+
+# Date format configuration
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "workshop"
+  # Git hub repo link
+  editURL = ""
+  description = ""
+  author = "phucthin29@gmail.com"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableLandingPageButton = true
+
+[Languages]
+[Languages.en]
+title = "Build a weather platform using AWS Serverless Services"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj/"
+weight = 20
+
+[Languages.vi]
+title = "Xây dựng một nền tảng quản lí trạm thời tiết bằng các dịch vụ serverless của AWS"
+weight = 2
+languageName = "Tiếng Việt"
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj/"
+weight = 20

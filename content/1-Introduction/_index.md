@@ -27,6 +27,7 @@ The platform is structured around a highly secure 3-Tier Architecture on AWS:
 
 **Multi-AZ Resilience:** The architecture spans across multiple Availability Zones (AZs). The RDS PostgreSQL database uses a Multi-AZ deployment (synchronous standby) and the ElastiCache Redis cluster uses a Read Replica to guarantee zero data loss and automated failover in under 60 seconds.
 
+
 ### System Architecture Diagram
 
 ![System Architecture Diagram](/images/system-architecture.png)
